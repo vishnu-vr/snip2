@@ -20,10 +20,10 @@
             return $count;
         }
 
-        $servername = "it's_a_secre";
-        $username = "it's_a_secre";
-        $password = "it's_a_secre"; 
-        $dbname = "it's_a_secre";
+        $servername = "it's_a_secret";
+        $username = "it's_a_secret";
+        $password = "it's_a_secret"; 
+        $dbname = "it's_a_secret";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -271,7 +271,7 @@
 <?php
 
     $pass = $_POST["pass"];
-    if ($pass == "it's_a_secre"){
+    if ($pass == "it's_a_secret"){
         echo "password : True";
         showData();
     }
