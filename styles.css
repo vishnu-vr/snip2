@@ -3,11 +3,25 @@
   zoom: 1.0 ;
 }
 
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
 .footer {
    position: fixed;
-   left: 0;
+   right: 2%;
    bottom: 0;
-   width: 100%;
+   /*width: 100%;*/
    background-color: grey;
    color: white;
    text-align: center;
@@ -87,8 +101,8 @@
   visibility: visible; /* Show the snackbar */
   /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
   However, delay the fade out process for 2.5 seconds */
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 10.5s;
+  animation: fadein 0.5s, fadeout 0.5s 10.5s;
 }
 
 /* Animations to fade the snackbar in and out */

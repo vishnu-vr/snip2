@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
+<script src="button.js"></script>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
@@ -16,7 +17,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+/*button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -28,7 +29,7 @@ button {
 
 button:hover {
   opacity: 0.8;
-}
+}*/
 
 .cancelbtn {
   width: auto;
@@ -48,6 +49,9 @@ img.avatar {
 
 .container {
   padding: 16px;
+  margin:10px;
+  margin-right: 30%;
+  margin-left: 30%;
 }
 
 span.psw {
@@ -56,14 +60,20 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   span.psw {
      display: block;
      float: none;
   }
   .cancelbtn {
-     width: 100%;
+     width: 100%;  
   }
+  .container {
+  padding: 16px;
+  margin:10px;
+  margin-right: 0em;
+  margin-left: 0em;
+}
 }
 </style>
 </head>
@@ -89,28 +99,19 @@ span.psw {
     <button type="button" class="cancelbtn">Cancel</button>
   </div>
 </form>
-<hr>
-<h4><p>Example username : SCS/1234/16</p>
-  <p>Example password : 1234</p>
-</h4>
+<div class="container">
+  <hr>
+  <h4><p>Example username : SCS/1234/16</p>
+    <p>Example password : 1234</p>
+  </h4>
+</div>
 <div class="footer">
   <!-- Use a button to open the snackbar -->
   <button style="background-color:grey;" onclick="myFunction()">&#128519;</button>
 
   <!-- The actual snackbar -->
-  <div id="snackbar">&#128520;</div>
+  <div id="snackbar">https://github.com/vishnu-vr/snip2</div>
 </div>
-<script>
-  function myFunction(){
-    // Get the snackbar DIV
-    var x = document.getElementById("snackbar");
 
-    // Add the "show" class to DIV
-    x.className = "show";
-
-    // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  }
-</script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <?php
     function showData(){
         $servername = "it's_a_secret";
-        $username = "it's_a_secret";
-        $password = "it's_a_secret"; 
-        $dbname = "it's_a_secret";
+        $username = "it's_a_secre";
+        $password = "it's_a_secre"; 
+        $dbname = "it's_a_secre";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -53,7 +53,7 @@
 
 <?php
     $pass = $_POST["pass"];
-    if ($pass == "it's_a_secret"){
+    if ($pass == "it's_a_secre"){
         showData();
     }
 ?>

@@ -9,10 +9,10 @@
         $user = $username."#".date("Y/m/d/l")."#".$name_of_user;
         //echo $user;
         //Details for connecting to hostinger database
-        $servername = "it's_a_secret";
-        $dbusername = "it's_a_secret";
-        $dbpassword = "it's_a_secret"; 
-        $dbname = "it's_a_secret";
+        $servername = "it's_a_secre";
+        $dbusername = "it's_a_secre";
+        $dbpassword = "it's_a_secre"; 
+        $dbname = "it's_a_secre";
 
         //Create connection
         $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
