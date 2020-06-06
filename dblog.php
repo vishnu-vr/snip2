@@ -2,7 +2,7 @@
     function showData(){
         $servername = "it's_a_secret";
         $username = "it's_a_secret";
-        $password = "it's_a_secret"; 
+        $password = "it's_a_secret";
         $dbname = "it's_a_secret";
 
         // Create connection
@@ -14,32 +14,18 @@
         }
 
         echo "Connected successfully";
-
-        //$sql = "INSERT INTO username (user) VALUES ('vishnu')";
-        //$conn->query($sql);
-        
-        //if ($conn->query($sql) === TRUE) {
-        //   echo "New record created successfully";
-        //} else {
-        //    echo "Error: " . $sql . "<br>" . $conn->error;
-        //}
+        echo "<br>";
 
 
         $sql = "SELECT * FROM username";
         $result = $conn->query($sql);
-
-        $data = [];
         
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                //echo $row["user"]. "<br>";
-                array_push($data,$row["user"]);
+                echo $row["user"]. "<br>";
+                // array_push($data,$row["user"]);
             }
-        }
-        echo "<br><br>";
-        for ($i=0; $i<sizeof($data); $i++){
-            echo $data[$i]."<br>";
         }
 
         $conn->close();
